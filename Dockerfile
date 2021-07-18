@@ -17,6 +17,8 @@ RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache \
     --add Microsoft.VisualStudio.Component.Windows10SDK \
     --add Microsoft.VisualStudio.Component.Windows10SDK.19041
 
+# Install Prerequisites
+# https://rustc-dev-guide.rust-lang.org/building/prerequisites.html
 # Install tools from Chocolatey
 RUN Install-PackageProvider nuget -Force; \
     Install-PackageProvider ChocolateyGet -Force; \
